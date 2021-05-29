@@ -12,6 +12,8 @@ jobs:
     steps:
       - name: Install Scoop
         run: iwr -useb get.scoop.sh | iex
+      - name: Add scoop to actions path
+        run: Join-Path (Resolve-Path ~).Path "scoop\shims" >> $Env:GITHUB_PATH
       - name: Scoop bucket add
         run: scoop bucket add org https://github.com/utkuozdemir/scoop-pv-migrate.git
       - name: Scoop install
