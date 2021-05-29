@@ -1,0 +1,15 @@
+{
+    "version": "0.5.7",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/utkuozdemir/pv-migrate/releases/download/v0.5.7/pv-migrate_0.5.7_windows_x86_64.zip",
+            "bin": [
+                "pv-migrate.exe"
+            ],
+            "hash": "2a99a6e564eea9e21b76995e715e5689845cbaff9519ca6a45cdee5639abdf25"
+        }
+    },
+    "homepage": "https://github.com/utkuozdemir/pv-migrate",
+    "license": "Apache-2.0",
+    "description": "Persistent volume migration plugin for Kubernetes"
+}
