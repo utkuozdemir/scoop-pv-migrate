@@ -15,7 +15,7 @@ jobs:
       - name: Add scoop to actions path
         run: Join-Path (Resolve-Path ~).Path "scoop\shims" >> $Env:GITHUB_PATH
       - name: Scoop bucket add
-        run: scoop bucket add org https://github.com/utkuozdemir/scoop-pv-migrate.git
+        run: scoop bucket add utkuozdemir https://github.com/utkuozdemir/scoop-pv-migrate.git
       - name: Scoop install
         run: scoop install utkuozdemir/pv-migrate
       - name: Run command
