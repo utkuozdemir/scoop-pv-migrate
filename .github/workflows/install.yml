@@ -10,6 +10,8 @@ jobs:
   install:
     runs-on: windows-2019
     steps:
+      - name: Install Scoop
+        run: iwr -useb get.scoop.sh | iex
       - name: Scoop bucket add
         run: scoop bucket add org https://github.com/utkuozdemir/scoop-pv-migrate.git
       - name: Scoop install
