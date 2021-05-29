@@ -1,0 +1,18 @@
+---
+name: install
+on:
+  push:
+    branches:
+      - master
+    paths-ignore:
+      - "**.md"
+jobs:
+  install:
+    runs-on: windows-2019
+    steps:
+      - name: Scoop bucket add
+        run: scoop bucket add org https://github.com/utkuozdemir/scoop-pv-migrate.git
+      - name: Scoop install
+        run: scoop install utkuozdemir/pv-migrate
+      - name: Run command
+        run: pv-migrate --version
