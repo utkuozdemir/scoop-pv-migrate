@@ -11,7 +11,9 @@ jobs:
     runs-on: windows-2019
     steps:
       - name: Install Scoop
-        run: iwr -useb get.scoop.sh | iex
+        run: |
+          iwr -useb get.scoop.sh -outfile 'install.ps1'
+          .\install.ps1 -RunAsAdmin
       - name: Add scoop to actions path
         run: Join-Path (Resolve-Path ~).Path "scoop\shims" >> $Env:GITHUB_PATH
       - name: Scoop bucket add
