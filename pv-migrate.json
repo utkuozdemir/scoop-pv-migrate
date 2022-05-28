@@ -1,12 +1,12 @@
 {
-    "version": "0.12.1",
+    "version": "0.13.0",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/utkuozdemir/pv-migrate/releases/download/v0.12.1/pv-migrate_v0.12.1_windows_x86_64.zip",
+            "url": "https://github.com/utkuozdemir/pv-migrate/releases/download/v0.13.0/pv-migrate_v0.13.0_windows_x86_64.zip",
             "bin": [
                 "pv-migrate.exe"
             ],
-            "hash": "8dc02024425edc8ecbf48792dcf7e70cdc4135604e6aeb8ac96e7870203a479c"
+            "hash": "cbc02f9f286950aea7201b27d8c03fe116492b59533bc7cae80460686edd4a14"
         }
     },
     "homepage": "https://github.com/utkuozdemir/pv-migrate",
