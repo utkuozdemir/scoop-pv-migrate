@@ -6,9 +6,14 @@ on:
       - master
     paths-ignore:
       - "**.md"
+  pull_request:
+    branches:
+      - master
+    paths-ignore:
+      - "**.md"
 jobs:
   install:
-    runs-on: windows-2019
+    runs-on: windows-latest
     steps:
       - name: Install Scoop
         run: |
